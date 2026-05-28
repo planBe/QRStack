@@ -9,16 +9,19 @@ to [clipStack](https://github.com/planBe/ClipStack) and
 
 ## Status
 
-**v0.2 — in development.** Working menu bar app with live QR preview,
-drag-and-drop, recent history, size + error-correction-level options, and
-copy-to-clipboard. Configurable global hotkey is planned for a later version.
+**v0.3 — in development.** Working menu bar app with live QR preview,
+drag-and-drop URLs/text in, drag-out PNG to other apps, recent history,
+size + error-correction-level options, and copy-to-clipboard. Configurable
+global hotkey is planned for a later version.
 
-## Features (v0.2)
+## Features (v0.3)
 
 - Lives in the menu bar; no Dock icon
 - Live QR preview as you type
 - **Drag-and-drop URLs or text** straight into the input field (drag from
   Safari's address bar, the Finder URL field, or any text source)
+- **Drag the QR image out** to Pages, Mail, Keynote, Finder, or any image
+  target — the PNG drops at your chosen Size setting
 - **Recent history** — last 10 generated inputs persist across launches;
   click to re-populate
 - **Size picker** — Small / Medium / Large / Huge (256 / 512 / 1024 / 2048 px)
@@ -60,9 +63,9 @@ Then ⌘R in Xcode.
 - [x] v0.1 — live menu bar QR generator with copy-to-clipboard
 - [x] v0.2 — drag-and-drop URLs/text, recent history (10 max, persisted), size
   options (256/512/1024/2048), error-correction-level toggle (L/M/Q/H)
-- [ ] v0.3 — drag-out QR image to other apps (NSItemProvider write side)
-- [ ] v0.4 — decode mode: drop a QR image, get the embedded text back
-- [ ] v0.5 — configurable global hotkey
+- [x] v0.3 — drag-out QR image to other apps (NSItemProvider write side)
+- [ ] v0.4 — global hotkey (default ⌥⇧⌘Q) to open the popover from anywhere
+- [ ] v0.5 — decode mode: drop a QR image, get the embedded text back
 - [ ] v1.0 — App Store + notarized GitHub Release
 
 ## License

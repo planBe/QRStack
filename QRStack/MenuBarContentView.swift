@@ -105,6 +105,20 @@ struct MenuBarContentView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: qrSize - 16, height: qrSize - 16)
+                    .onDrag {
+                        history.add(inputText)
+                        let provider = NSItemProvider()
+                        if let png = QRGenerator.pngData(from: image) {
+                            provider.registerDataRepresentation(
+                                forTypeIdentifier: UTType.png.identifier,
+                                visibility: .all
+                            ) { completion in
+                                completion(png, nil)
+                                return nil
+                            }
+                        }
+                        return provider
+                    }
             } else {
                 Text("Type, paste, or drop text above")
                     .font(.system(size: 11))
