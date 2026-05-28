@@ -9,14 +9,22 @@ to [clipStack](https://github.com/planBe/ClipStack) and
 
 ## Status
 
-**v0.1 — early development.** Working menu bar app with live QR preview and
-copy-to-clipboard. Hotkey support, size options, error-correction-level toggle,
-and history are planned for later versions.
+**v0.2 — in development.** Working menu bar app with live QR preview,
+drag-and-drop, recent history, size + error-correction-level options, and
+copy-to-clipboard. Configurable global hotkey is planned for a later version.
 
-## Features (v0.1)
+## Features (v0.2)
 
 - Lives in the menu bar; no Dock icon
 - Live QR preview as you type
+- **Drag-and-drop URLs or text** straight into the input field (drag from
+  Safari's address bar, the Finder URL field, or any text source)
+- **Recent history** — last 10 generated inputs persist across launches;
+  click to re-populate
+- **Size picker** — Small / Medium / Large / Huge (256 / 512 / 1024 / 2048 px)
+  for the copied PNG
+- **Error-correction-level toggle** — L (7%) / M (15%, default) / Q (25%) /
+  H (30%) per ISO/IEC 18004
 - One-click pull text from the system clipboard
 - One-click copy the QR image (PNG) to the clipboard
 - Pure SwiftUI + AppKit + CoreImage; zero third-party dependencies
@@ -50,9 +58,10 @@ Then ⌘R in Xcode.
 ## Roadmap
 
 - [x] v0.1 — live menu bar QR generator with copy-to-clipboard
-- [ ] v0.2 — size options, error-correction-level toggle
-- [ ] v0.3 — drag-out QR image to other apps
-- [ ] v0.4 — recent history
+- [x] v0.2 — drag-and-drop URLs/text, recent history (10 max, persisted), size
+  options (256/512/1024/2048), error-correction-level toggle (L/M/Q/H)
+- [ ] v0.3 — drag-out QR image to other apps (NSItemProvider write side)
+- [ ] v0.4 — decode mode: drop a QR image, get the embedded text back
 - [ ] v0.5 — configurable global hotkey
 - [ ] v1.0 — App Store + notarized GitHub Release
 
