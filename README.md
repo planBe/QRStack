@@ -9,12 +9,13 @@ to [clipStack](https://github.com/planBe/ClipStack) and
 
 ## Status
 
-**v0.3 — in development.** Working menu bar app with live QR preview,
+**v0.4 — in development.** Working menu bar app with live QR preview,
 drag-and-drop URLs/text in, drag-out PNG to other apps, recent history,
-size + error-correction-level options, and copy-to-clipboard. Configurable
-global hotkey is planned for a later version.
+size + error-correction-level options, copy-to-clipboard, and a global
+hotkey (⌥⇧⌘R) to pop the menu from anywhere. Configurable hotkey
+binding is planned for a later version.
 
-## Features (v0.3)
+## Features (v0.4)
 
 - Lives in the menu bar; no Dock icon
 - Live QR preview as you type
@@ -28,6 +29,8 @@ global hotkey is planned for a later version.
   for the copied PNG
 - **Error-correction-level toggle** — L (7%) / M (15%, default) / Q (25%) /
   H (30%) per ISO/IEC 18004
+- **Global hotkey ⌥⇧⌘R** opens the popover from any app, even when qrStack
+  doesn't have focus
 - One-click pull text from the system clipboard
 - One-click copy the QR image (PNG) to the clipboard
 - Pure SwiftUI + AppKit + CoreImage; zero third-party dependencies
@@ -64,8 +67,10 @@ Then ⌘R in Xcode.
 - [x] v0.2 — drag-and-drop URLs/text, recent history (10 max, persisted), size
   options (256/512/1024/2048), error-correction-level toggle (L/M/Q/H)
 - [x] v0.3 — drag-out QR image to other apps (NSItemProvider write side)
-- [ ] v0.4 — global hotkey (default ⌥⇧⌘Q) to open the popover from anywhere
-- [ ] v0.5 — decode mode: drop a QR image, get the embedded text back
+- [x] v0.4 — global hotkey ⌥⇧⌘R to open the popover from anywhere (Carbon
+  RegisterEventHotKey; sandbox-clean, no Accessibility permission required)
+- [ ] v0.5 — configurable hotkey binding (Settings UI)
+- [ ] v0.6 — decode mode: drop a QR image, get the embedded text back
 - [ ] v1.0 — App Store + notarized GitHub Release
 
 ## License

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		096B12EC46283CCD8FED6B06 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6845642163A59E0546B71D9 /* QRGenerator.swift */; };
 		372DA390DA71D399614A89D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A66595970F09A2DFF4AC79 /* Assets.xcassets */; };
+		396A5DF1321CE6F543289B76 /* HotkeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350FD818ACB29102453A8B0 /* HotkeyManager.swift */; };
 		4DCDB0227AC911FFA92113CC /* QRStackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69F80C984770C07DECA4664 /* QRStackApp.swift */; };
 		55FEB8016F3379722D2A389E /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C5C042211E7ED9BCE084B /* HistoryStore.swift */; };
 		D2271436B8C9D715C08CFB92 /* MenuBarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37AA141BB4C7B66ACD0CAB1 /* MenuBarContentView.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		579DB8431A6D328D6F9A8DB4 /* QRStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C350FD818ACB29102453A8B0 /* HotkeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyManager.swift; sourceTree = "<group>"; };
 		C6845642163A59E0546B71D9 /* QRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
 		D42C5C042211E7ED9BCE084B /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
 		D69F80C984770C07DECA4664 /* QRStackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRStackApp.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			children = (
 				F5A66595970F09A2DFF4AC79 /* Assets.xcassets */,
 				D42C5C042211E7ED9BCE084B /* HistoryStore.swift */,
+				C350FD818ACB29102453A8B0 /* HotkeyManager.swift */,
 				F37AA141BB4C7B66ACD0CAB1 /* MenuBarContentView.swift */,
 				C6845642163A59E0546B71D9 /* QRGenerator.swift */,
 				D69F80C984770C07DECA4664 /* QRStackApp.swift */,
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55FEB8016F3379722D2A389E /* HistoryStore.swift in Sources */,
+				396A5DF1321CE6F543289B76 /* HotkeyManager.swift in Sources */,
 				D2271436B8C9D715C08CFB92 /* MenuBarContentView.swift in Sources */,
 				096B12EC46283CCD8FED6B06 /* QRGenerator.swift in Sources */,
 				4DCDB0227AC911FFA92113CC /* QRStackApp.swift in Sources */,
@@ -208,7 +212,7 @@
 				CODE_SIGN_ENTITLEMENTS = QRStack/QRStack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -223,7 +227,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.3;
+				MARKETING_VERSION = 0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.planbecreative.QRStack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -246,7 +250,7 @@
 				CODE_SIGN_ENTITLEMENTS = QRStack/QRStack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -261,7 +265,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.3;
+				MARKETING_VERSION = 0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.planbecreative.QRStack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
