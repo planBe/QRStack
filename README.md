@@ -9,13 +9,13 @@ to [clipStack](https://github.com/planBe/ClipStack) and
 
 ## Status
 
-**v0.4 — in development.** Working menu bar app with live QR preview,
+**v1.0.** Free menu bar QR code generator for macOS — live QR preview,
 drag-and-drop URLs/text in, drag-out PNG to other apps, recent history,
 size + error-correction-level options, copy-to-clipboard, and a global
 hotkey (⌥⇧⌘R) to pop the menu from anywhere. Configurable hotkey
-binding is planned for a later version.
+binding is planned for a post-1.0 release.
 
-## Features (v0.4)
+## Features
 
 - Lives in the menu bar; no Dock icon
 - Live QR preview as you type
@@ -69,9 +69,9 @@ Then ⌘R in Xcode.
 - [x] v0.3 — drag-out QR image to other apps (NSItemProvider write side)
 - [x] v0.4 — global hotkey ⌥⇧⌘R to open the popover from anywhere (Carbon
   RegisterEventHotKey; sandbox-clean, no Accessibility permission required)
-- [ ] v0.5 — configurable hotkey binding (Settings UI)
-- [ ] v0.6 — decode mode: drop a QR image, get the embedded text back
-- [ ] v1.0 — App Store + notarized GitHub Release
+- [x] v1.0 — first Mac App Store release (consolidates v0.1–v0.4)
+- [ ] v1.1 — configurable hotkey binding (Settings UI)
+- [ ] v1.2 — decode mode: drop a QR image, get the embedded text back
 
 ## License
 
